@@ -1,0 +1,18 @@
+#create virtual evironment
+python3 -m venv <evironment name>
+
+#activate environment
+source <environment name>/bin/activate
+
+#deactivate environment
+deactivate
+
+
+#install fastapi in the venv
+pip install fastapi
+
+#install uvicorn ASGI web server compatibility manager
+pip3 install uvicorn
+
+#start server
+uvicorn main:app --reload
